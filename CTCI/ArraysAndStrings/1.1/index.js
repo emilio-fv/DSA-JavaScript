@@ -1,6 +1,12 @@
+/**
+ * 1.1 Is Unique
+ * Implement an algorithm to determine if a string has all unique characters. What if you cannot use any additional data structures?
+ * @param {*} str 
+ * @returns {boolean} 
+ */
 function solution1(str) {
-    // Check if string is empty or a single character
-    if (str.length <= 1) { 
+    // Check if string is empty, a single character, or null
+    if (str?.length <= 1 || !str) { 
         return false;
     }
 
