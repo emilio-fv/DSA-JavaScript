@@ -1,6 +1,8 @@
 /**
  * 1.1 Is Unique
  * Implement an algorithm to determine if a string has all unique characters. What if you cannot use any additional data structures?
+ * 
+ * Edge cases: null input, empty string, single character -> all return false
  * @param {*} str 
  * @returns {boolean} 
  */

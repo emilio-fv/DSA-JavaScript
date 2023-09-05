@@ -1,17 +1,20 @@
 /**
  * 1.2 Check Permutation
  * Given 2 strings, check if one string is a permutation of the other. For a string to be a permutation of another string, it must have the same order of characters but shifted by a specific amount.
+ * 
+ * Edge cases: null, empty string, different lengths of strings -> return false
+ * 
  * @param {*} str1 string 1
  * @param {*} str2 string 2
  * @returns {boolean} if one string is a permutation of the other
  */
 function solution1(s1, s2) {
   // Edge cases: null input, empty strings, and different string lengths
-  if (s1 === null || s2 === null) {
+  if (!s1 || !s2) {
     return false
   }
 
-  if (s1?.length === 0 || s2?.length === 0) { 
+  if (s1.length === 0 || s2.length === 0) { 
     return false;
   }
 
