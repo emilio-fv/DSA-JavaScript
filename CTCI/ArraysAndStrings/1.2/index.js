@@ -8,6 +8,7 @@
  * @param {*} str2 string 2
  * @returns {boolean} if one string is a permutation of the other
  */
+
 function solution1(s1, s2) {
   // Edge cases: null input, empty strings, and different string lengths
   if (!s1 || !s2) {
@@ -20,20 +21,21 @@ function solution1(s1, s2) {
 
   if (s1.length !== s2.length) {
     return false;
-}
+  }
 
   for (let i = 0; i < s2.length; i++) { // Iterate over string to search for the first letter in the second string
     if (s1[0] === s2[i]) { // Slice and rearrange to match first string
-        let temp = s2.slice(i) + s2.slice(0, i);
-        if (s1 === temp) {
-            return true;
-        }
+      let temp = s2.slice(i) + s2.slice(0, i);
+      if (s1 === temp) {
+          return true;
+      }
     }
+  }
+
+  return false;
 }
 
-return false;
-}
-
+// Exports
 module.exports = {
   solution1
 }

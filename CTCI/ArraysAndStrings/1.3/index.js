@@ -9,6 +9,7 @@
  * @param {*} length true length of string
  * @returns {string} url-ified string
  */
+
 function solution1(str, length) {
   // Handle empty string edge cases
   if (!str || str?.length === 0) {
