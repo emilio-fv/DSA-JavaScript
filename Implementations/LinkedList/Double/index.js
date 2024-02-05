@@ -1,4 +1,4 @@
-import DoubleListNode from "../../ListNode/Double";
+import DoubleListNode from "../../listNode/double";
 
 class DoublyLinkedList {
   constructor(head = null) {

@@ -1,4 +1,4 @@
-import SingleListNode from "../../ListNode/Single";
+import SingleListNode from "../../listNode/single";
 
 class SinglyLinkedList {
   constructor(head = null) {
